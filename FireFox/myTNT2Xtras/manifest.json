@@ -1,1 +1,57 @@
-{  "description": "Adds extra features to myTNT2!",  "manifest_version": 2,  "name": "myTNT2 Xtras",  "author": "TNT CIT SK",  "version": "1.2",  "homepage_url": "https://mytnt.tnt.com",  "icons":     {      "32": "icons/tntLogo-mobile-32.png"    },  "applications":     {      "gecko":       {        "id": "myTNT2Xtras@tnt.com",        "strict_min_version": "45.0"      }    },  "content_scripts":     [      {        "matches": ["https://mytnt.tnt.com/*"],        "js": ["scripts/lib/md5.js","scripts/lib/angular.min.js","scripts/lib/web.min.js","scripts/content.js"],        "run_at": "document_end"      }    ],          "background":     {      "scripts": ["scripts/background.js"]    },      "browser_action":     {      "browser_style": true,      "default_icon": "icons/tntLogo-mobile-32.png",      "default_title": "myTNT 2"    },  "permissions":     [      "tabs",      "cookies",      "storage",      "webNavigation",      "https://mytnt.tnt.com/*",      "https://app.livechatoo.com/*",      "https://objednavka.tnt.sk/*",      "http://objednavka.tnt.sk/*"    ]    }
+{
+
+  "description": "Adds extra features to myTNT2!",
+  "manifest_version": 2,
+  "name": "myTNT2 Xtras",
+  "author": "TNT CIT SK",
+  "version": "1.2",
+  "homepage_url": "https://mytnt.tnt.com",
+  "icons": 
+    {
+      "32": "icons/tntLogo-mobile-32.png"
+    },
+
+  "applications": 
+    {
+      "gecko": 
+      {
+        "id": "myTNT2Xtras@tnt.com",
+        "strict_min_version": "45.0"
+      }
+    },
+
+  "content_scripts": 
+    [
+      {
+        "matches": ["https://mytnt.tnt.com/*"],
+        "js": ["scripts/lib/md5.js","scripts/lib/angular.min.js","scripts/lib/web.min.js","scripts/content.js"],
+        "run_at": "document_end"
+      }
+    ],
+     
+   
+  "background": 
+    {
+      "scripts": ["scripts/background.js"]
+    }, 
+    
+  "browser_action": 
+    {
+      "browser_style": true,
+      "default_icon": "icons/tntLogo-mobile-32.png",
+      "default_title": "myTNT 2"
+    },
+
+  "permissions": 
+    [
+      "tabs",
+      "cookies",
+      "storage",
+      "webNavigation",
+      "https://mytnt.tnt.com/*",
+      "https://app.livechatoo.com/*",
+      "https://objednavka.tnt.sk/*",
+      "http://objednavka.tnt.sk/*"
+    ]
+    
+}
